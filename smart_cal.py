@@ -60,6 +60,8 @@ def highest_common_factor(t):
         for j in range(0, 6):
             if i % result != 0:
                 result = i % result
+                if j==1:
+                    result = i % result
     return result
 
 
